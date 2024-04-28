@@ -11,8 +11,14 @@
 \usepackage[a4paper, lmargin=0.1666\paperwidth, rmargin=0.1666\paperwidth, tmargin=0.1111\paperheight, bmargin=0.1111\paperheight]{geometry}
 \usepackage{fancyhdr}
 \renewcommand{\baselinestretch}{1.35}
-\usepackage{svg}
+\usepackage[flushleft]{threeparttable}
 \usepackage{amsmath}
+\usepackage{makecell}
+\usepackage{graphics}
+\usepackage{rotating}
+\usepackage{multicol}
+\usepackage{breakurl}
+
 
 
 % Doument setup
@@ -189,74 +195,83 @@ As previously hinted to, my analysis surrounds the Swiss national elections of 2
 
 
 \begin{table}
-\centering
-\caption{Swing calculations for the Swiss federal elections from 1999–2023 with a 24-year-average swing of 1.45\% and a 24-year-median swing of 1.57\%.}
-\vspace{0.5cm}
-\label{tab:my_table}
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} | l | l | l | l | l | l | l | l | }
-\hline
-\textit{Party}\textbf{ / Year} & \textbf{2023} & \textbf{2019} & \textbf{2015} & \textbf{2011} & \textbf{2007} & \textbf{2003} & \textbf{1999} \\
-\hline
-\textit{SVP} & +2.3\% & –3.8\% & +2.8\% & –2.4\% & +2.2\% & +4.2\% & +7.7\% \\
-\hline
-\textit{SP} & +1.5\% & –2.0\% & +0.1\% & –0.9\% & -3.7\% & +0.8\% & +0.7\% \\
-\hline
-\textit{FDP} & –0.8\% & –1.3\% & +1.3\% & –2.5\% & -1.5\% & -2.6\% & -0.4\% \\
-\hline
-\textit{Mitte} & +0.2\% &   &   &   &   &   &   \\
-\hline
-\textit{Grüne} & –3.4\% & +6.1\% & –1.3\% & –1.2\% & +2.2\% & +2.3\% & -0.2\% \\
-\hline
-\textit{glp} & –0.2\% & +3.2\% & –0.8\% & +4.0\% & +1.4\% &   &   \\
-\hline
-\textit{EVP} & –0.1\% & +0.2\% & –0.1\% & –0.4\% & +0.1\% & +0.5\% & +/-0\% \\
-\hline
-\textit{EDU} & +0.2\% & –0. 2\% & –0.1\% & +/-0\% & +/-0\% & +/-0\% &   \\
-\hline
-\textit{CVP} &   & –0.2\% & –0.7\% & -2.2\% & +0.1\% & -1.4\% & -1\% \\
-\hline
-\textit{BDP} &   & –1.6\% & –1.3\% & +5.4\% &   &   &   \\
-\hline
-\textit{LPS} &   &   &   &   & -0.4\% & -0.1\% & -0.4\% \\
-\hline
-\textit{SD} &   &   &   &   &   & -0.8\% & -1.3\% \\
-\hline
-\textit{other} & +0.3\% & –0.3\% & +0.1\% & +0.2\% & -0.4\% & -3\% & -2\% \\
-\hline
-\textbf{Average Swing} & \textbf{1.00\%} & \textbf{1.89\%} & \textbf{0.86\%} & \textbf{1.92\%} & \textbf{1.2\%} & \textbf{1.57\%} & \textbf{1.68\%} \\
-\hline
-
-\end{tabular*}
-
+    \begin{threeparttable}
+        \centering
+        \caption{Swing calculations for the Swiss federal elections from 1999–2023.}
+        \vspace{0.5cm}
+        \label{tab:my_table}
+        \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} | l | l | l | l | l | l | l | l | }
+            \hline
+            \textit{Party}\textbf{ / Year} & \textbf{2023} & \textbf{2019} & \textbf{2015} & \textbf{2011} & \textbf{2007} & \textbf{2003} & \textbf{1999} \\
+            \hline
+            \textit{SVP} & +2.3\% & –3.8\% & +2.8\% & –2.4\% & +2.2\% & +4.2\% & +7.7\% \\
+            \hline
+            \textit{SP} & +1.5\% & –2.0\% & +0.1\% & –0.9\% & -3.7\% & +0.8\% & +0.7\% \\
+            \hline
+            \textit{FDP} & –0.8\% & –1.3\% & +1.3\% & –2.5\% & -1.5\% & -2.6\% & -0.4\% \\
+            \hline
+            \textit{Mitte} & +0.2\% &   &   &   &   &   &   \\
+            \hline
+            \textit{Grüne} & –3.4\% & +6.1\% & –1.3\% & –1.2\% & +2.2\% & +2.3\% & -0.2\% \\
+            \hline
+            \textit{glp} & –0.2\% & +3.2\% & –0.8\% & +4.0\% & +1.4\% &   &   \\
+            \hline
+            \textit{EVP} & –0.1\% & +0.2\% & –0.1\% & –0.4\% & +0.1\% & +0.5\% & +/-0\% \\
+            \hline
+            \textit{EDU} & +0.2\% & –0. 2\% & –0.1\% & +/-0\% & +/-0\% & +/-0\% &   \\
+            \hline
+            \textit{CVP} &   & –0.2\% & –0.7\% & -2.2\% & +0.1\% & -1.4\% & -1\% \\
+            \hline
+            \textit{BDP} &   & –1.6\% & –1.3\% & +5.4\% &   &   &   \\
+            \hline
+            \textit{LPS} &   &   &   &   & -0.4\% & -0.1\% & -0.4\% \\
+            \hline
+            \textit{SD} &   &   &   &   &   & -0.8\% & -1.3\% \\
+            \hline
+            \textit{other} & +0.3\% & –0.3\% & +0.1\% & +0.2\% & -0.4\% & -3\% & -2\% \\
+            \hline
+            \textbf{Average Swing} & \textbf{1.00\%} & \textbf{1.89\%} & \textbf{0.86\%} & \textbf{1.92\%} & \textbf{1.2\%} & \textbf{1.57\%} & \textbf{1.68\%} \\
+            \hline
+        
+        \end{tabular*}
+        \begin{tablenotes}
+            \footnotesize
+            \item Note: 24-year-average swing of 1.45\%, 24-year-median swing of 1.57\%.
+        \end{tablenotes}
+    \end{threeparttable}
 \end{table}
 
 
 \begin{table}
-\centering
-\caption{Turnout statistics for the Swiss federal general elections from 1999–2023 with a 24-year-average turnout of 46.56\% and a 24-year-median turnout of 46.60\%.}
-\vspace{0.5cm}
-\label{tab:my_table}
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} | l | l | }
-\hline
-\textbf{Year} & \textbf{Turnout} \\
-\hline
-\textit{2023} & 46.6\% \\
-\hline
-\textit{2019} & 45.1\% \\
-\hline
-\textit{2015} & 48.4\% \\
-\hline
-\textit{2011} & 48.6\% \\
-\hline
-\textit{2007} & 48.8\% \\
-\hline
-\textit{2003} & 45.2\% \\
-\hline
-\textit{1999} & 43.2\% \\
-\hline
-
-\end{tabular*}
-
+    \begin{threeparttable}
+        \centering
+        \caption{Turnout statistics for the Swiss federal general elections from 1999–2023.}
+        \vspace{0.5cm}
+        \label{tab:my_table}
+        \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} | l | l | }
+            \hline
+            \textbf{Year} & \textbf{Turnout} \\
+            \hline
+            \textit{2023} & 46.6\% \\
+            \hline
+            \textit{2019} & 45.1\% \\
+            \hline
+            \textit{2015} & 48.4\% \\
+            \hline
+            \textit{2011} & 48.6\% \\
+            \hline
+            \textit{2007} & 48.8\% \\
+            \hline
+            \textit{2003} & 45.2\% \\
+            \hline
+            \textit{1999} & 43.2\% \\
+            \hline
+        \end{tabular*}
+        \begin{tablenotes}
+            \footnotesize
+            \item Note: 24-year-average turnout of 46.56\%, 24-year-median turnout of 46.60\%.
+        \end{tablenotes}
+    \end{threeparttable}
 \end{table}
 
 For party selection, we will use all parties that were independently able to build factions in the national council after the election, which leaves us with 6 parties.\footnote{SVP, SP, FDP, die Mitte, GPS (the green party of Switzerland) and glp.}
@@ -309,11 +324,899 @@ Figure 2 depicts the earnings reported divided by party and source, summed up as
 
 \begin{figure}
     \centering
-    \includesvg[width=0.75\linewidth]{output/plots/plot_figure_2.svg}
+    \includegraphics[width=1\linewidth]{output/plots/plot_figure_2.png}
     \caption{Earnings by party and source. Non-monetary earnings, those through merchandise and events were ommitted for legibilty. Parties labelled * are not part of the analysis, as they were not able to form a faction in the large chamber of parliament after election day}
     \label{fig:enter-label}
 \end{figure}
 
+Figure 3 depicts my operationalizations of party activity in the months leading up to the election: There seems to be ample variance between the parties in these metrics as well with the most active parties publishing three times as many posts on Instagram and issuing 8 times as many press releases as their least active counterparts. The bottom row puts the variables up to the parties’ budgets on the x-axis. This allows for a first assessment of the agency hypothesis H1: If it’s true that parties try to become more active influencers of the public agenda the higher their budgets are, then we should observe the lines in the bottom graphs to rise to the top-right, which is clearly not the case.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{output/plots/plot_figure_3.png}
+    \caption{Party activity measured as the number of press releases and posts on Instagram (top row) put against party earnings (bottom row). ED = Election Day.}
+    \label{fig:enter-label}
+\end{figure}
+Figure 4 presents findings regarding the frequency hypothesis H2 in the same way: The bar plot shows the number of times a party appeared in the media within 6 months of the election, while the smooth conditional means graph plots them against the party’s campaign budget. Two significant observations can be drawn. Firstly, the two parties competing for the ecological vote (the GPS and the glp) seem to fight for media attention. While the glp is more relevant when considering the 6 months leading up to the election, the GPS is more salient within the last month. I want to argue that this is evidence in favor of H2: Because parties will be spending more money in the days and weeks leading up to the election than in the 6 months prior, the effect of a higher budget on the relevance in the media will be stronger the closer the election is. Thereby, the higher campaign budget of the GPS helped it become more relevant than the glp within the course of the election campaign. 
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{output/plots/plot_figure_4.png}
+    \caption{Occurrences of parties in media articles leading up to the election. «Die Mitte» has been removed. See Appendix D for explanation. ED = Election day.
+}
+    \label{fig:enter-label}
+\end{figure}
+
+Secondly, I want to take away that occurrences in the media are positively related to campaign budgets: Since the means line goes up over all – within the election month even without fail – I suggest the hypothesis withstands scrutiny with the selected data.
+
+Next, I want to present descriptive statistics for the MISI scores in our dataset: Table 3 displays the relevant summary statistics for MISI scores by CAP major topic. As becomes obvious from taking a look at the standard deviations, the variance of MISI score per topic is small: With a mean standard deviation of 0.006 MISI-points and an average mean-to-standard deviation ratio over 11.5:1, the spread of our index is tight. In other words: Within the data I chose, the media did not change its focus severely. A look at Figure 5 confirms this as well: Only a small number of trends can be identified, notably the continuous decline of \textit{«Domestic Commerce»}, the peak of \textit{«Environment»} three months ahead of the election, the rise of «Government Operations» towards the end of our dataset and the rapid uptick in reporting on \textit{«International Affairs»}. While the first two points are opaquer, an analysis of the articles in the latter two categories provides a clear explanation for their large rate of change: On October 7\textsuperscript{th} 2023, the terrorist organization Hamas attacked Israel, prompting Israel to respond with significant force, reinvigorating a long standing conflict. Against this backdrop, the use of the data I selected is problematic, as the issue salience hypothesis H3 which we try to test with it cannot incorporate such idiosyncrasies.
+
+
+\begin{table}
+\centering
+\caption{Summary statistics for MISI distribution in the dataset by issue. }
+\label{tab:my_table}
+\vspace{0.5cm}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} | l | l | l | l | l | l |}
+\hline
+\textit{Issue Name} & \textit{Mean} & \textit{Median} & \textit{Std. Dev.} & \textit{Minimum} & \textit{Maximum} \\
+\hline
+\textbf{Agriculture} & 0.0175 & 0.0185 & 0.002 & 0.0153 & 0.0188 \\
+\hline
+\textbf{Civil Rights} & 0.0619 & 0.0618 & 0.0031 & 0.0589 & 0.0651 \\
+\hline
+\textbf{Culture} & 0.0539 & 0.0538 & 0.0029 & 0.0511 & 0.0569 \\
+\hline
+\textbf{Defense} & 0.052 & 0.0534 & 0.005 & 0.0464 & 0.0561 \\
+\hline
+\textbf{Dom. Comm.} & 0.167 & 0.166 & 0.0152 & 0.1522 & 0.1826 \\
+\hline
+\textbf{Education} & 0.0103 & 0.0095 & 0.0023 & 0.0085 & 0.0129 \\
+\hline
+\textbf{Energy} & 0.0171 & 0.0169 & 0.0006 & 0.0167 & 0.0177 \\
+\hline
+\textbf{Environment} & 0.0688 & 0.0655 & 0.0141 & 0.0568 & 0.0843 \\
+\hline
+\textbf{Foreign Trade} & 0.0082 & 0.0083 & 0.0002 & 0.008 & 0.0084 \\
+\hline
+\textbf{GovOps} & 0.0865 & 0.0923 & 0.0103 & 0.0747 & 0.0925 \\
+\hline
+\textbf{Health} & 0.0436 & 0.0439 & 0.0057 & 0.0377 & 0.0491 \\
+\hline
+\textbf{Housing} & 0.0134 & 0.0132 & 0.0012 & 0.0124 & 0.0148 \\
+\hline
+\textbf{Immigration} & 0.017 & 0.0162 & 0.0025 & 0.0151 & 0.0198 \\
+\hline
+\textbf{Intern. Affairs} & 0.127 & 0.1193 & 0.0356 & 0.0959 & 0.1659 \\
+\hline
+\textbf{Labor} & 0.0079 & 0.0067 & 0.0022 & 0.0065 & 0.0104 \\
+\hline
+\textbf{Law and Crime} & 0.1115 & 0.1122 & 0.0052 & 0.106 & 0.1163 \\
+\hline
+\textbf{Macroecon.} & 0.0171 & 0.0175 & 0.0023 & 0.0146 & 0.0191 \\
+\hline
+\textbf{Public Lands} & 0.0002 & 0.0002 & 0.0001 & 0.0001 & 0.0003 \\
+\hline
+\textbf{Social Welfare} & 0.0148 & 0.0149 & 0.0036 & 0.0111 & 0.0182 \\
+\hline
+\textbf{Technology} & 0.0364 & 0.0339 & 0.0057 & 0.0323 & 0.0429 \\
+\hline
+\textbf{Transport.} & 0.0678 & 0.0668 & 0.0063 & 0.0621 & 0.0745 \\
+\hline
+
+\end{tabular*}
+
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{output/plots/plot_figure_5.png}
+    \caption{MISI distribution in our sample over time for 10 topics with the highest mean MISI.}
+    \label{fig:enter-label}
+\end{figure}
+
+To describe the PISI data, I suggest picking the 5 most salient issues for each party: On the one hand, this allows for assertions surrounding issue-spread across parties. On the other, checking these topics against expectations of issue ownership (e.g. the intuition that SVP will focus on immigration or that the GPS will focus on environmental issues) will speak to the reliability of the index. Table 4 displays these most important topics \textit{MIPs} and their respective PISI for each party.
+
+
+\begin{table}
+\centering
+\caption{5 most important CAP topics listed by party with PISI scores in brackets.}
+\label{tab:my_table}
+\vspace{0.5cm}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} | l | l | l |}
+\hline
+\thead{SVP} & \thead{SP} & \thead{FDP} \\
+\hline
+    \footnotesize
+    \makecell{1. Immigration (0.1338)\\
+    2. International Affairs (0.0947)\\
+    3. Civil Rights (0.0896)\\
+    4. Energy (0.0788)\\
+    5. Social Welfare (0.0714)}&     
+    \footnotesize
+    \makecell{1. Social Welfare (0.2313)\\
+    2. International Affairs (0.1559)\\
+    3. Civil Rights (0.1432)\\
+    4. Macroeconomics (0.1398)\\
+    5. Environment (0.0698)}&
+    \footnotesize
+    \makecell{1. Macroeconomics (0.2565)\\
+    2. Social Welfare (0.1503)\\
+    3. Energy (0.1402)\\
+    4. Health (0.1069)\\
+    5. Foreign Trade (0.1036)}\\
+\hline
+\thead{Die Mitte} & \thead{GPS} & \thead{glp} \\
+\hline
+    \footnotesize
+    \makecell{1. Environment (0.1068)\\
+    2. International Affairs (0.1054)\\
+    3. Health (0.1008)\\
+    4. Domestic Commerce (0.0880)\\
+    5. Energy (0.0770)}&
+    \footnotesize
+    \makecell{1. Environment (0.1664)\\
+    2. Civil Rights (0.1009)\\
+    3. International Affairs (0.0960)\\
+    4. Technology (0.0684)\\
+    5. Energy (0.0600)}&
+    \footnotesize
+    \makecell{1. Environment (0.1565)\\
+    2. Macroeconomics (0.0968)\\
+    3. Health (0.0795)\\
+    4. Transportation (0.0779)\\
+    5. Civil Rights (0.0755)}\\
+\hline
+
+\end{tabular*}
+
+\end{table}
+From this list I am deducing that there is satisfactory variance in which topics parties are highlighting: More than half of the 21 CAP major topics are represented in the parties’ top 5 issues. Barring trends that are reflecting the political \textit{zeitgeist}, such as the fact that Die Mitte is talking about the environment most often, the results also confirm with appropriate assumptions: The SVP is, as expected, talking about immigration most often, the SP about Social Welfare, the FDP about Macroeconomics. Noteworthy are the differences in PISI-substantiveness as well: While the MIP-MISI scores for SP and FDP are rather large – the scores can be interpreted by saying that the SP and the FDP are talking about Social Welfare and Macroeconomics respectively one fourth of the time – these scores are smaller for Die Mitte and the SVP. This can be interpreted as certain parties not having as clear of a topical focus as others. While this might be reasonable for Die Mitte, such conclusions seem more unlikely when thinking about the SVP.
+
+
+\subsection{Regression analysis}
+Table 5 includes the OLS coefficients for the 7 models I ran to test the issue salience hypothesis H3. I started with an empty model (1), pitting PISI against MISI\_1m, iteratively adding earnings, party controls, the interaction term and finally MISI\_3m and MISI\_6m, building up to the full model (7).
+
+
+\begin{sidewaystable}
+    \centering
+    \resizebox{\textheight}{!}{%
+    \begin{tabular}{@{\extracolsep{50pt}}lccccccc} 
+    \\[-1.8ex]\hline 
+    \hline \\[-1.8ex] 
+     & \multicolumn{7}{c}{\textit{Dependent variable:}} \\ 
+    \cline{2-8} 
+    \\[-1.8ex] & \multicolumn{7}{c}{MISI within election month} \\ 
+     & PISI & + Earnings & + Controls & + Interaction & + MISI 3m & alt: MISI 6m & Full Model \\ 
+    \\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7)\\ 
+    \hline \\[-1.8ex] 
+     PISI & 0.095$^{・}$ & 0.095$^{・}$ & 0.095$^{・}$ & 0.505$^{**}$ & $-$0.010 & 0.126$^{・}$ & $-$0.027 \\ 
+      & (0.086) & (0.087) & (0.088) & (0.228) & (0.070) & (0.088) & (0.072) \\ 
+      & & & & & & & \\ 
+     Party Earnings &  & 0.000 & $-$0.000 & 0.000$^{・}$ & $-$0.000 & 0.000$^{・}$ & $-$0.000 \\ 
+      &  & (0.000) & (0.000) & (0.000) & (0.000) & (0.000) & (0.000) \\ 
+      & & & & & & & \\ 
+     Number of Seats &  &  & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+      &  &  & (0.001) & (0.001) & (0.0002) & (0.0003) & (0.0002) \\ 
+      & & & & & & & \\ 
+     Left-Right Scale &  &  & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+      &  &  & (0.004) & (0.004) & (0.001) & (0.002) & (0.001) \\ 
+      & & & & & & & \\ 
+     GAL-TAN Scale &  &  & $-$0.000 & $-$0.000 & 0.000 & 0.000 & 0.000 \\ 
+      &  &  & (0.004) & (0.004) & (0.001) & (0.001) & (0.001) \\ 
+      & & & & & & & \\ 
+     MISI 3 months before ED &  &  &  &  & 1.008$^{***}$ &  & 1.157$^{***}$ \\ 
+      &  &  &  &  & (0.029) &  & (0.137) \\ 
+      & & & & & & & \\ 
+     MISI 6 bonths before ED &  &  &  &  &  & 0.966$^{***}$ & $-$0.150$^{・}$ \\ 
+      &  &  &  &  &  & (0.037) & (0.135) \\ 
+      & & & & & & & \\ 
+     PISI * Party Earnings &  &  &  & $-$0.00000$^{*}$ & 0.000$^{・}$ & $-$0.000$^{・}$ & 0.000$^{・}$ \\ 
+      &  &  &  & (0.00000) & (0.000) & (0.000) & (0.000) \\ 
+      & & & & & & & \\ 
+     Constant & 0.043$^{***}$ & 0.043$^{***}$ & 0.043$^{**}$ & 0.024$^{・}$ & 0.0001 & $-$0.004$^{・}$ & 0.001 \\ 
+      & (0.006) & (0.010) & (0.021) & (0.023) & (0.007) & (0.009) & (0.007) \\ 
+      & & & & & & & \\ 
+    \hline \\[-1.8ex] 
+    Observations & 126 & 126 & 126 & 126 & 126 & 126 & 126 \\ 
+    R$^{2}$ & 0.010 & 0.010 & 0.010 & 0.040 & 0.913 & 0.861 & 0.914 \\ 
+    Adjusted R$^{2}$ & 0.002 & $-$0.006 & $-$0.032 & $-$0.008 & 0.908 & 0.853 & 0.908 \\ 
+    Residual Std. Error & 0.046 (df = 124) & 0.046 (df = 123) & 0.047 (df = 120) & 0.046 (df = 119) & 0.014 (df = 118) & 0.018 (df = 118) & 0.014 (df = 117) \\ 
+    F Statistic & 1.204$^{・}$ (df = 1; 124) & 0.597$^{・}$ (df = 2; 123) & 0.233 (df = 5; 120) & 0.829$^{・}$ (df = 6; 119) & 177.055$^{***}$ (df = 7; 118) & 104.836$^{***}$ (df = 7; 118) & 155.389$^{***}$ (df = 8; 117) \\ 
+    \hline 
+    \hline \\[-1.8ex] 
+    \textit{Note:}  & \multicolumn{7}{r}{$^{*}$p$<$0.7; $^{**}$p$<$0.1; $^{***}$p$<$0.05} \\ 
+     & \multicolumn{7}{r}{・p<0.7; *p<0.1; **p<0.05; ***p<0.01} \\ 
+    \end{tabular}
+    }
+    \caption{Table representing regression model coefficients.}
+    \label{tab:my_label}
+\end{sidewaystable}
+
+
+I want to draw attention to 5 findings: Firstly, the coefficients for PISI do not achieve a p-value lower than 0.1 in all but one model, meaning the correlation in our data between PISI and MISI\_1m is not statistically significant when controlling for party controls and the temporally lagged media salience.
+
+Secondly, I want to draw attention to the significant and very substantial correlation between the MISI controls and the MISI dependent variable. This supports the finding from above that the media issue salience did not change significantly in the months leading up to the election.
+
+The third point I want to make is that I ran regressions with a limited number of observations. Because my level of observation was the party-topic dyad and I analyzed 21 topics for 6 parties, this leaves us with 126 observations. I’d argue that if there was more data available or a different level of analysis was used, the coefficients would allow for more comprehensive conclusions.
+
+As a fourth finding, I want to point out the one occurrence of a PISI p-value lower than 0.1: When adding the term measuring the interaction between PISI and earnings in model (4), the coefficient for PISI achieves a statistically significant confidence and its predictive power grows substantially compared to model (3). I’d argue this supports the conclusion, that when holding the interaction between party issue salience and the party’s resources constant, their issue salience influences the media agenda, as opposed to when letting the interaction vary where it does not. These findings support H3 in principle but allow me to add some limitations: The R\textsuperscript{2} of all models not containing MISI controls are minimal. Even though the indicator grows by a factor of four when adding the interaction, it still only reaches a value of 0.04, meaning only 4\% of the variance in the dataset can be explained through that model. Additionally, the F-tests fail: Though it could be argued that this should lead to the immediate dismissal of all models that don’t contain MISI controls – as they are the only ones with significant F-Stats – I want to suggest that the increase in substantiality and the decrease of the p-value when moving from (3) to (4) stand independently of the F-test. Furthermore, the low number of cases and covariates do not put the regression models at a large risk of coincidental correlation through regression towards the mean.
+
+As my fifth and final insight, I want to highlight that when lowering the confidence cutoff to 70\%, the PISI coefficient is significant even when controlling for the MISI index 6 months prior as shown in model (6). As I have made a succinct case that the underlying data is flawed, I posit that lowering the threshold in this case is suitable.\footnote{Regression table including p-values available in the code repository in «output/tables/table\_5\_with\_pvalues.html».}
+
+
+\section{Conclusions, caveats, and contributions}
+Let me preface the final chapter of my thesis by summarizing my findings in regards to the three hypotheses I proposed: I was not able to provide evidence for the agency hypothesis H1 based on my data. Descriptive evidence substantiated the frequency hypothesis H2 and the regression models I ran supplied inconclusive evidence for the issue salience hypothesis H3. I will finalize this thesis by listing conclusions, caveats and scientific contributions I argue this paper has made.
+
+
+\subsection{Conclusions: What did we learn?}
+\begin{enumerate}
+    \item \textit{What if we just measured MISI and PISI wrongly?} The fourth and fifth finding in my regression analysis leads me to argue that the inferred connection between PISI and MISI could not be made, because the data does not accurately measure the underlying concepts or it is flawed through factors out of my control. I want to use this discovery, not to make the case that H3 can be substantiated through my analysis but to stipulate that there is reason to keep investigating.
+    \item \textit{What if elite-constructionism does not work this quickly?} The finding that media salience is very robust seems to suggest that the media «does not change its mind through elite-influence». I would append this statement by a temporal component: Had we used data for a longer time frame, the stability of the media agenda might decrease. Enlarging this horizon would allow us to make clearer conclusions on the whodunnit of media-elite-relationships. Additionally, qualitative research in the form of mechanism tracing and extensive case studies would allow for further enhancement of the framework of this thesis. As a fitting case in the confines of this study, I want to suggest analyzing the appearance of the \textit{«10 Millionen Schweiz»}-Frame which was propagated by the SVP and promptly dropped come election day. 
+\end{enumerate}
+
+
+\subsection{Caveats: Could we learn more?}
+\begin{enumerate}
+    \item \textit{What if we used different and more PISI source material?} Although the descriptive analysis of the PISI scores per party revealed that the index I created matched the expectations connoisseurs of the Swiss political landscape are likely to have, the way in which I calculated it comes with some unavoidable drawbacks: Election platforms and comprehensive party programs in particular are inherently rigid, as they are most often authorized by general assemblies or party conventions. While they serve as guidance for a party’s communication in general, they can never be complete. Adding the content of more publications, such as blog posts, newsletters or press releases, or even switching the domain to code parliamentary speaches would definitely improve the validity, reliability and generalizability of the index. Doing so could help answering open questions such as the fact that the SVP’s counterintuitively talks very little about immigration compared to the issue salience of Macroeconomics for the FDP. Furthermore, coding publictions throughout the election period, such as articles or press releases created in the election campaign, might resolve the problem about PISI responsiveness: If we include data measuring how parties react to (keyword: culturalist-constructivism) or shape (keyword: elite-constructivism) the media agenda on political happenings such as the Israeli-Palestinian war in our PISI measurment, I want to claim that broader conclusions could be made.
+
+    \item  \textit{Is there a different way of testing H1 and H2?} Because of the way I operationalized party activity and relevance in the media, I was not able to run regressions to test these two hypotheses. There are two ways in which this problem could be resolved: Either, we add more data by expanding the levels of analysis to the cantonal level, operationalizing the regressand differently or by waiting for more data to become available. As the budget declaration obligation by the audit office also applies to direct democratic votes and Switzerland holds several votes per year, it is only a matter of time until such calculations can be done through statistical means. Alternatively, qualitative case studies could analyze the behaviour of campaigning parties, inductively enhancing the framework of how money shapes the agenda setting process.
+
+    \item \textit{Are earnings and spending levels congruent?} The dataset on campaign finances includes levels of campaign earnings, not of \textit{spendings}. Judging whether these two measures are congruent is impossible with the methods I have chosen and is therefore assumed. Further research should address possible ways in which this conundrum could be resolved or, alternatively, spendings data should have to be reported and made available for scientific research by changing the regulation.
+
+    \item \textit{Was it the right time to conduct this analysis?} It would be pretentious not to address the fact that I analyzed issue salience in the media when, because of a human catastrophy, the salience of international affairs rose substantially. And yet, there seemingly is no way to control for this anomaly through skew correction or other statistical methods. Replication of this analysis in a media environment where no stories about terror and war are on the frontpages is advisable. 
+
+
+
+\end{enumerate}
+
+\subsection{Contributions: How did this paper help us learn?}
+\begin{enumerate}
+    \item  \textit{A fair, novel framework and operationalizations:} By providing a summary of a large body of literature and logically deriving two premises, I was able to build a parsimonious framework that I argue to be a fair and original lense through which to appreciate the connection of money and politics. I posit this to be the most far-reaching contribution my paper makes as the ways in which this model can be applied and the hypotheses to be derived from it are numerous. The operationalization of issue salience for parties and media – the PISI and MISI scores – seem equally useful.
+
+    \item \textit{Machine readability and CAP Coding of Swiss party positions:} As far as I am able to tell, party programs of Swiss parties have not been coded into CAP topics so far. The data made available in the code repository in Appendix B – including the plaintext versions of the newest party program by SVP, the election platforms by FDP, GPS and SP that are not yet available in the Manifesto Project Database and the PISI data – may be used for scientific research indiscrimintely. 
+
+    \item \textit{Argument to fine-tune CAP topics:} As the creator of the CAP master codebook Shaun Bevan (2019) denotes himself, the CAP Major topic categorization has several limitations. A look at the different content-widths (compare «Macroeconomics», a relatively wide topic, and «Public Lands», a very narrow topic) and content-typologies (compare «Social Welfare», an ideological distinction, and «Government Operations», a legal distinction) suffices to conclude that a harmonization of topics is called for. This paper adds to the heap of literature that advocates for such an overhaul. Think about Die Mitte’s topics: Formerly Supporting the nuclear family, which is one of the core topics of their ideology, would fall into «Law and Crime». The appropriateness of this classification is in my opinion questionable. 
+
+    \item \textit{Application of an AI method}: Through the use of an AI-assisted content analysis solution and the discussion of its validity, I have provided further evidence for the specific method’s validity and the usefulness of machine learning methods in the social sciences.
+
+
+\end{enumerate}
+
+\newpage
+
+\section*{Bibliography}
+\addcontentsline{toc}{section}{\protect\numberline{}Bibliography}
+
+\newpage
+\pagenumbering{gobble}
+\vspace*{\fill}
+\begin{center}
+    \Large\textbf{Disclaimer on the use of artificial intelligence:}\\
+    \normalsize
+    \textit{
+        The contents of the following paper were written entirely without the use of artificially intelligent text generation models. The literature cited was found in part with the use of two AI-powered tools, namely researchrabbit.ai and scite.ai. While the exact use of researchrabbit.ai is practically impossible to reconstruct, the author believes the simple disclosure of its use will class under the fair-disclosure of AI-tools and will therefore be allowed under the statement of authorship provided by the University of Zurich. The prompts used with scite.ai can be found in Appendix E of this document. No further AI-implements, including but not limited to ChatGPT, Bard, Copilot or Bing Chat, were used.
+    }
+\end{center}
+\vspace*{\fill}
+
+\newpage
+\pagenumbering{Roman}
+\section*{Appendix}
+\addcontentsline{toc}{section}{\protect\numberline{}Appendix}
+
+\subsection*{\textsc{Appendix A}: Query configuration to the SMD through Swissdox@LiRI}
+\addcontentsline{toc}{subsection}{\protect\numberline{}\textsc{Appendix A}: Query configuration to the SMD through Swissdox@LiRI}
+
+\underline{For H2}
+
+\begin{multicols}{2}
+
+\footnotesize
+\begin{verbatim}
+    Query «SVP»
+    query:
+      sources:
+        - ZWA
+        - ZWAO
+        - TA
+        - NNTA
+        - NZZO
+        - NZZ
+        - NZZS
+        - TAS
+        - SRF
+      dates:
+        - from: 2023-04-22
+          to: 2023-10-21
+      languages:
+        - de
+      doctypes:
+        - WWE
+        - PND
+        - PLD
+        - PID
+        - PRD
+        - PJO
+        - NNE
+      content:
+        - Schweizerische Volkspartei
+        - schweizerische Volkspartei
+        - SVP
+    result:
+      format: TSV
+      maxResults: 10000000
+      columns:
+        - id
+        - pubtime
+        - medium_code
+        - medium_name
+        - rubric
+        - regional
+        - doctype
+        - doctype_description
+        - language
+        - char_count
+        - dateline
+        - head
+        - subhead
+        - content_id
+        - content
+    version: 1.2
+\end{verbatim}
+
+\newpage
+\begin{verbatim}
+    Query «SP»
+    query:
+      sources:
+        - ZWA
+        - ZWAO
+        - TA
+        - NNTA
+        - NZZO
+        - NZZ
+        - NZZS
+        - TAS
+        - SRF
+      dates:
+        - from: 2023-04-22
+          to: 2023-10-21
+      languages:
+        - de
+      doctypes:
+        - WWE
+        - PND
+        - PLD
+        - PID
+        - PRD
+        - PJO
+        - NNE
+      content:
+        - Sozialdemokratische Partei
+        - sozialdemokratische Partei
+        - SP
+    result:
+      format: TSV
+      maxResults: 10000000
+      columns:
+        - id
+        - pubtime
+        - medium_code
+        - medium_name
+        - rubric
+        - regional
+        - doctype
+        - doctype_description
+        - language
+        - char_count
+        - dateline
+        - head
+        - subhead
+        - content_id
+        - content
+    version: 1.2
+
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+    Query «FDP»
+    query:
+      sources:
+        - ZWA
+        - ZWAO
+        - TA
+        - NNTA
+        - NZZO
+        - NZZ
+        - NZZS
+        - TAS
+        - SRF
+      dates:
+        - from: 2023-04-22
+          to: 2023-10-21
+      languages:
+        - de
+      doctypes:
+        - WWE
+        - PND
+        - PLD
+        - PID
+        - PRD
+        - PJO
+        - NNE
+      content:
+        - FDP
+        - FDP.Die Liberalen
+        - fdp
+    result:
+      format: TSV
+      maxResults: 10000000
+      columns:
+        - id
+        - pubtime
+        - medium_code
+        - medium_name
+        - rubric
+        - regional
+        - doctype
+        - doctype_description
+        - language
+        - char_count
+        - dateline
+        - head
+        - subhead
+        - content_id
+        - content
+    version: 1.2
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+    Query «GRÜNE»
+    query:
+      sources:
+        - ZWA
+        - ZWAO
+        - TA
+        - NNTA
+        - NZZO
+        - NZZ
+        - NZZS
+        - TAS
+        - SRF
+      dates:
+        - from: 2023-04-22
+          to: 2023-10-21
+      languages:
+        - de
+      doctypes:
+        - WWE
+        - PND
+        - PLD
+        - PID
+        - PRD
+        - PJO
+        - NNE
+      content:
+        - GRÜNE
+        - die Grüne
+        - Die Grünen
+        - die Grünen
+        - grüne Partei
+    result:
+      format: TSV
+      maxResults: 10000000
+      columns:
+        - id
+        - pubtime
+        - medium_code
+        - medium_name
+        - rubric
+        - regional
+        - doctype
+        - doctype_description
+        - language
+        - char_count
+        - dateline
+        - head
+        - subhead
+        - content_id
+        - content
+    version: 1.2
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+    Query «glp»
+    query:
+      sources:
+        - ZWA
+        - ZWAO
+        - TA
+        - NNTA
+        - NZZO
+        - NZZ
+        - NZZS
+        - TAS
+        - SRF
+      dates:
+        - from: 2023-04-22
+          to: 2023-10-21
+      languages:
+        - de
+      doctypes:
+        - WWE
+        - PND
+        - PLD
+        - PID
+        - PRD
+        - PJO
+        - NNE
+      content:
+        - glp
+        - GLP
+        - grünliberale Partei
+        - Grünliberale
+        - Grünliberalen
+    result:
+      format: TSV
+      maxResults: 10000000
+      columns:
+        - id
+        - pubtime
+        - medium_code
+        - medium_name
+        - rubric
+        - regional
+        - doctype
+        - doctype_description
+        - language
+        - char_count
+        - dateline
+        - head
+        - subhead
+        - content_id
+        - content
+    version: 1.2
+\end{verbatim}
+
+\newpage
+
+\underline{For H3}
+
+\begin{verbatim}
+    Query «month 1 before ED»
+    query:
+      sources:
+        - ZWA
+        - ZWAO
+        - TA
+        - NNTA
+        - NZZ
+        - NZZO
+        - NZZS
+        - TAS
+        - SRF
+      dates:
+        - from: 2023-09-22
+          to: 2023-10-21
+      languages:
+        - de
+      doctypes:
+        - PID
+        - PLD
+        - PND
+        - NNE
+        - WWE
+        - PRD
+        - PJO
+        - PLW
+        - PMA
+    result:
+      format: TSV
+      maxResults: 10000000
+      columns:
+        - id
+        - pubtime
+        - medium_code
+        - medium_name
+        - rubric
+        - regional
+        - doctype
+        - doctype_description
+        - language
+        - char_count
+        - dateline
+        - head
+        - subhead
+        - content_id
+        - content
+    version: 1.2
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+    Query «month 3 before ED»
+    query:
+      sources:
+        - ZWA
+        - ZWAO
+        - TA
+        - NNTA
+        - NZZ
+        - NZZO
+        - NZZS
+        - TAS
+        - SRF
+      dates:
+        - from: 2023-07-22
+          to: 2023-08-21
+      languages:
+        - de
+      doctypes:
+        - PID
+        - PLD
+        - PND
+        - NNE
+        - WWE
+        - PRD
+        - PJO
+        - PLW
+        - PMA
+    result:
+      format: TSV
+      maxResults: 10000000
+      columns:
+        - id
+        - pubtime
+        - medium_code
+        - medium_name
+        - rubric
+        - regional
+        - doctype
+        - doctype_description
+        - language
+        - char_count
+        - dateline
+        - head
+        - subhead
+        - content_id
+        - content
+    version: 1.2
+\end{verbatim}
+
+\newpage
+
+\begin{verbatim}
+    Query «month 6 before ED»
+    query:
+      sources:
+        - ZWA
+        - ZWAO
+        - TA
+        - NNTA
+        - NZZ
+        - NZZO
+        - NZZS
+        - TAS
+        - SRF
+      dates:
+        - from: 2023-04-22
+          to: 2023-05-21
+      languages:
+        - de
+      doctypes:
+        - PID
+        - PLD
+        - PND
+        - NNE
+        - WWE
+        - PRD
+        - PJO
+        - PLW
+        - PMA
+    result:
+      format: TSV
+      maxResults: 10000000
+      columns:
+        - id
+        - pubtime
+        - medium_code
+        - medium_name
+        - rubric
+        - regional
+        - doctype
+        - doctype_description
+        - language
+        - char_count
+        - dateline
+        - head
+        - subhead
+        - content_id
+        - content
+    version: 1.2
+\end{verbatim}
+
+\end{multicols}
+
+\normalsize
+
+\newpage
+
+\subsection*{\textsc{Appendix B}: Statement on code and data availability}
+\addcontentsline{toc}{subsection}{\protect\numberline{}\textsc{Appendix B}: Statement on code and data availability}
+All code used for the analysis and the data I am able to share in accordance with LiRI’s \textit{Terms of Use} etc. is available here: \href{https://github.com/stud-ipz-uzh/timothyjustinoesch_ba}{https://github.com/stud-ipz-uzh/timothyjustinoesch\_ba}. LiRI data can be accessed through the use of the queries provided above. Should the need arise, please contact me for support.
+
+
+\newpage
+\subsection*{\textsc{Appendix C}: Party publications used for H3 }
+\addcontentsline{toc}{subsection}{\protect\numberline{}\textsc{Appendix C}: Party publications used for H3}
+
+\begin{enumerate}
+    \item SVP
+    \begin{itemize}
+        \item Name: «Parteiprogramm 2023 – 2027»
+        \item Type: Party Program.
+        \item Word count: 17’063 words
+        \item Source: \href{https://www.svp.ch/wp-content/uploads/230726_Parteiprogramm.pdf}{https://www.svp.ch/wp-content/uploads/230726\_Parteiprogramm.pdf}
+        \item Last accessed: 25.04.2024.
+        \item Adopted on: 28.01.2023.
+        \item Authorized by: General Assembly.
+        \item Specific modifications: Removal of chapter recaps because of distortion concerns.
+    \end{itemize}
+\item SP
+    \begin{itemize}
+        \item Name: «WAHLEN 2023: WIR ERGREIFEN PARTEI.»
+        \item Type: Election platform.
+        \item Word count: 2’501 words.
+        \item Source: \href{https://www.sp-ps.ch/wp-content/uploads/2022/10/Wahlplattform_Broschure_A5_D.pdf}{https://www.sp-ps.ch/wp-content/uploads/2022/10/Wahlplattform\_Broschure\_A5\_D.pdf}
+        \item Last accessed: 25.04.2024.
+        \item Adopted on: 29.10.2022.
+        \item Authorized by: General Assembly.
+        \item Specific modifications: None.
+    \end{itemize}
+
+\newpage
+\item FDP
+    \begin{itemize}
+        \item Name: «Wir machen die Schweiz stark! Wahlkampfprogramm der FDP.Die Liberalen»
+        \item Type: Election platform.
+        \item Word count: 1'141 words.
+        \item Source: \url{https://www.fdp.ch/fileadmin/documents/fdp.ch/pdf/DE/Dokumente/20230506_Wahlkampfprogramm_d.pdf}
+        \item Last accessed: 25.04.2024.
+        \item Adopted on: Unclear.
+        \item Authorized by: Unclear.
+        \item Specific modifications: Adding of «Wir fordern: » to bullet-point style demands if necessary for clearer coding.
+    \end{itemize}
+
+\item Die Mitte
+    \begin{itemize}
+        \item Name: Inapplicable
+        \item Type: Positions from their webpage.
+        \item Word count: 2’977 words.
+        \item Source: \url{https://die-mitte.ch/themen}
+        \item Last accessed: 25.04.2024.
+        \item Adopted on: Unclear.
+        \item Authorized by: Unclear.
+        \item Specific modifications: Adding of «Wir fordern: » to bullet-point style demands if necessary for clearer coding.
+    \end{itemize}
+
+\newpage
+\item GPS
+    \begin{itemize}
+        \item Name: «AGENDA 2023-2027 GRÜNES WAHLPROGRAMM»
+        \item Type: Election platform.
+        \item Word count: 16’610 words.
+        \item Source: \url{https://gruene.ch/wp-content/uploads/2022/11/Agenda2023_Version_2_d_final.pdf}
+        \item Last accessed: 25.04.2024.
+        \item Adopted on: 28.01.2023.
+        \item Authorized by: General Assembly.
+        \item Specific modifications: Adding of «Wir fordern: » to bullet-point style demands if necessary for clearer coding.
+    \end{itemize}
+
+\item glp
+    \begin{itemize}
+        \item Name: «Leitlinien»
+        \item Type: Party program.
+        \item Word count: 3’431 words.
+        \item Source: \url{https://grunliberale.ch/dam/jcr:7dac72fc-ec06-4d0f-bbee-f779a00cd265/Leitlinien_glp_D.pdf}
+        \item Last accessed: 25.04.2024.
+        \item Adopted on: 11.10.2014.
+        \item Authorized by: General assembly.
+        \item Specific modifications: None.
+    \end{itemize}
+\end{enumerate}
+
+\newpage
+\subsection*{\textsc{Appendix D}: Explanation for removing \textit{«Die Mitte»} from analysis of H2.}
+\addcontentsline{toc}{subsection}{\protect\numberline{}\textsc{Appendix D}: Explanation for removing \textit{«Die Mitte»} from analysis of H2.}
+As «die Mitte» simply translates to «the center» from German, there was no way to identify the party in the news articles database. Simply filtering for the party’s name, which returned satisfactory results for the other parties, understandably resulted in oversampling. Therefore, «die Mitte» was removed from analysis of H2. Future research will have to be conducted in order to resolve this issue.
+
+\newpage
+\subsection*{\textsc{Appendix E}: Prompts used with \textit{scite.ai}}
+\addcontentsline{toc}{subsection}{\protect\numberline{}\textsc{Appendix E}: Prompts used with \textit{scite.ai}}
+\setlength\parindent{0pt}
+
+The following are prompts used with scite.ai. The prompts are in \textbf{bold}, the responses are \textit{italicized}. Prompt-typos were not removed.
+
+\textbf{Find papers in the field of political science that argue different positions on the question wether the mass media influence the political agenda or political elites influence the agenda of the mass media.}
+
+\textit{The influence of mass media on the political agenda and the reciprocal influence of political elites on media agenda-setting have been subjects of extensive research in political science. (2010) argue that the capacity of mass media to influence political parties' agendas is contingent upon the interests of the parties, suggesting a conditional relationship between mass media attention and political party agendas (Green-Pedersen \& Stubager, 2010). On the other hand, Wirth et al. (2010) found that the agenda of issues presented by political elites, such as presidents, influenced the subsequent national press agenda, indicating the influence of political elites on media agenda-building (Wirth et al., 2010). Additionally, Walgrave et al. (2007) and Walgrave \& Aelst (2006) have contributed to the understanding of the mass media's role in determining the political agenda, emphasizing the contingency and preliminary theory of media's political agenda-setting power (Walgrave et al., 2007; Walgrave \& Aelst, 2006). Furthermore, Vesa et al. (2015) revisited the politicians' views on the media's political agenda-setting power, highlighting the different perspectives on the extent of media influence on the political agenda (Vesa et al., 2015).}
+
+ \textit{These studies collectively demonstrate the complex and multifaceted nature of the relationship between mass media and political elites in shaping the political agenda. While some research emphasizes the conditional nature of media influence on political parties, others highlight the significant influence of political elites on media agenda-setting. The synthesis of these references underscores the need for a nuanced understanding of the interplay between mass media and political elites in shaping the political agenda.}
+\\
+\\
+ \textbf{Can you find more papers that argue the point that political elites, especially campaigns and campaigners, influence the mass media?}
+
+\textit{The influence of political elites, particularly campaigns and campaigners, on the mass media has been a subject of scholarly inquiry (Thesen, 2013). highlights the importance of investigating the media's role in promoting social problems on the political agenda, emphasizing the mediatized politics perspective (Thesen, 2013). Additionally, Aelst \& Walgrave (2017) propose an actor-centered, functional approach to understanding the dual function of the news media for political elites, shedding light on the influence of political actors on media agenda-setting (Aelst \& Walgrave, 2017). Furthermore, Davis (2003) points out documented cases of elites being influenced in their decision-making by media campaigns, underscoring the reciprocal relationship between political elites and the mass media (Davis, 2003). Moreover, (2012) discusses negotiation between elites outside the public sphere of mass media, indicating the significant influence of political elites in shaping agendas (Örnebring, 2012). These references collectively contribute to the understanding of the influence of political elites, especially campaigns and campaigners, on the mass media, highlighting the complex interplay between political actors and media agenda-setting.}
+\\
+\\
+ \textbf{Find papers in the field of political science that analyse the connection between campaign spending and the media agenda.}
+
+\textit{The relationship between campaign spending and the media agenda has been a subject of interest in political science research. Studies have shown that the media plays a significant role in shaping the political agenda during election campaigns (Walgrave \& Aelst, 2006). The influence of the media on campaign agendas has been a focus of research, with some studies indicating that parties set the agenda of the media during elections (Vliegenthart \& Walgrave, 2010). Additionally, the intermedia agenda-setting relationships between news media coverage and political ads generated by campaigns have been highlighted as an area requiring further investigation (Ragas \& Kiousis, 2010). Furthermore, the impact of social media on agenda building during election campaigns has been examined, with research indicating that Twitter communication by parties and politicians shapes the media agenda (Seethaler \& Melischek, 2019). It has also been suggested that mass media can set the public’s agenda, particularly during political campaigns (Towner \& Munoz, 2020).}
+
+ \textit{The influence of the media on campaign agendas has been studied through various theoretical perspectives, including agenda-setting theory (Seethaler \& Melischek, 2019). Research has also compared the contributions of political news releases and advertisements on media content during political campaigns, highlighting their relative linkages with news content (Kiousis et al., 2009). Furthermore, the flow of arguments among campaigners, the media, and the public in shaping the agenda during referendum campaigns has been investigated (Wirth et al., 2010). The role of issue content in campaign advertising and its interaction with the interests and agendas of issue publics has also been examined (Sides \& Karch, 2008).}
+
+ \textit{In addition to traditional media, the impact of social media platforms such as Twitter on agenda building during election campaigns has been a subject of interest (Sarma \& Hazarika, 2023). The usage of social media by political parties to influence the public agenda has been highlighted, with a focus on the spread of negative campaigns about opposition parties and the promotion of their own agendas (Sarma \& Hazarika, 2023).}
+
+ \textit{Overall, the literature suggests that the relationship between campaign spending and the media agenda is complex and multifaceted, involving traditional media, social media, political parties, and issue content. Further research is needed to fully understand the dynamics of this relationship and its implications for political communication and public opinion formation during election campaigns.}
+\\
+\\
+ \textbf{Find papers in the field of political science that highlight the controversy wether campaign funds matter for electoral success or not.}
+
+\textit{The impact of campaign funds on electoral success has been extensively researched in political science. Studies have examined the relationship between campaign spending and electoral outcomes, with some finding that higher campaign spending is associated with increased electoral success (Jucá et al., 2016). However, there are debates on whether restricting campaign spending would lead to electoral parity (Fisher et al., 2013). Additionally, research suggests that media coverage of campaign events significantly affects candidates' chances for electoral success (Shaw \& Roberts, 2000; Erkel et al., 2018).}
+
+ \textit{The role of public funding in influencing electoral competitiveness and candidate success has also been explored. Advocates of public funding argue that it reduces corruption and increases electoral competitiveness, while critics argue that it imposes unjust burdens on candidates (Werner \& Mayer, 2007; Ortuño-Ortín \& Schultz, 2005). Furthermore, philanthropic practices have been shown to contribute to electoral success (A'isyah \& Lessy, 2022).}
+
+ \textit{In conclusion, the literature presents a complex and multifaceted debate on the relationship between campaign funds and electoral success, with studies offering conflicting perspectives on the impact of campaign spending, media attention, and public funding.}
+\\
+\\
+ \textbf{Find papers that support the conclusion that campaign finance does not matter for the outcome of elections}
+
+\textit{The literature presents a diverse range of perspectives on the impact of campaign finance on electoral outcomes. Bean challenges the notion of the rational voter and suggests that democracies may choose bad policies, implying that campaign finance may not significantly influence electoral outcomes . Stratmann provides a partial review of the literature on money in politics, indicating that the relationship between campaign finance and electoral success is not straightforward . Furthermore, Bjornlund presents evidence supporting the idea that public campaign financing affects judicial legitimacy, suggesting that campaign finance may have limited impact on electoral outcomes . Porter and Steelman investigate the success of political newcomers in elections and highlight the role of early donations, indicating that factors beyond campaign finance may influence electoral success . Additionally, Butcher and Milyo examine the impact of campaign finance reforms on incumbent competition, suggesting that such reforms may not insulate incumbents from competition . Gross and Goidel explore the impact of state campaign finance laws and their findings suggest that these laws may not have a systematic influence on electoral outcomes .}
+
+ \textit{These studies collectively provide a nuanced understanding of the relationship between campaign finance and electoral success, indicating that the impact of campaign finance on electoral outcomes is complex and multifaceted.}
+\\
+\\
+ \textbf{Find papers in the field of political science that analyse how the public agenda influences the outcome of elections.}
+
+\textit{To understand how the public agenda influences the outcome of elections, it is essential to consider the interplay between public opinion, media influence, and policy responsiveness (Stimson, 1995). highlights that elections can change the government's political composition, leading to new policies, while policymakers also consider the electoral implications of public views. This rational anticipation underscores the impact of public opinion on election outcomes (Stimson, 1995). Furthermore, Mortensen (2010) emphasizes the significance of agenda setting in influencing public policy, indicating that policy agendas are shaped by the flow of information into the political system (Mortensen, 2010). This aligns with the assertion by Page \& Shapiro (1983) that public opinion can change over time due to generational replacement, national trends, events, and media influences, thereby impacting policy outcomes (Page \& Shapiro, 1983).}
+
+ \textit{The role of the media in shaping public opinion and the public agenda is also crucial. Ahmad et al. (2017) note that media attributes and agendas significantly influence public perceptions, particularly during elections, highlighting the media's role in shaping public opinion (Ahmad et al., 2017). Similarly, Kraus (2009) underscores the influence of language in shaping political policy and public agendas, further emphasizing the media's impact on public perception and policy outcomes (Kraus, 2009). Additionally, Langer \& Gruber (2020) emphasize the influence of legacy media in political agenda setting, highlighting the media's role in shaping policymakers' issue priorities (Langer \& Gruber, 2020).}
+
+ \textit{Moreover, the study by Sanmac et al. (2021) indicates that public opinion can influence the critical assessment of election outcomes by multi-track diplomacy actors, thereby impacting the credibility of election processes (Sanmac et al., 2021). This underscores the broader impact of public opinion on election-related assessments and outcomes.}
+
+ \textit{In the contemporary context, social media also plays a significant role in shaping the public agenda (Zhang et al., 2023). highlight the interplay between media agenda, social bots, and the public agenda in the discussion of a presidential election, indicating the complex dynamics of agenda setting in the digital age (Zhang et al., 2023). Similarly, (2017) emphasize the role of social media in influencing political agendas, particularly in mobilizing support for specific political agendas during election campaigns (Schäfer et al., 2017).}
+
+ \textit{In conclusion, the public agenda significantly influences election outcomes through its impact on policy responsiveness, media influence, and the interplay between public opinion and political decision-making. Understanding these dynamics is crucial for comprehending the complex relationship between the public agenda and election results.}
+\\
+\\
+ \textbf{Please find papers in support of the issue-voting hypothesis, meaning people voting based on their beliefs.}
+
+\textit{The issue-voting hypothesis suggests that individuals vote based on their beliefs and preferences on specific policy issues, favoring political parties or candidates whose policy positions align closely with their own views on salient issues. (2013) support this hypothesis, indicating that voters tend to favor parties closest to their issue positions, thereby influencing their voting behavior (Dassonneville \& Lewis-Beck, 2013). Similarly, (1995) discusses the policy-oriented economic voting hypothesis, emphasizing that voters' economic policy preferences influence their voting decisions (Çarkoğlu, 1995).}
+
+ \textit{Moreover, Wanta et al. (2004) provide empirical evidence supporting the agenda-setting hypothesis, demonstrating that media coverage influences public perceptions of the importance of specific issues, indicating that media agenda setting can shape the public agenda and potentially influence issue-based voting behavior (Wanta et al., 2004). Additionally, Sheafer \& Weimann (2005) explore the impact of agenda building, agenda setting, and priming on individual voting intentions, highlighting the interconnectedness of media influence and voter decision-making, particularly in relation to issue salience and voting behavior (Sheafer \& Weimann, 2005).}
+
+ \textit{Furthermore, Shamir et al. (2014) delve into voter election frames, shedding light on the issues that elections revolve around, providing insights into how issues are framed in the context of elections, which can influence voters' perceptions and decisions, thereby supporting the issue-voting hypothesis (Shamir et al., 2014).}
+
+ \textit{In conclusion, the issue-voting hypothesis is supported by research that demonstrates the influence of policy-oriented economic voting, media agenda setting, and issue salience on voter behavior. These studies provide valuable insights into the role of issue preferences in shaping electoral outcomes and highlight the significance of policy considerations in voter decision-making.}
+\\
+\\
+ \textbf{Find an appropriate citation for the sentence "the media can't tell people what to think, but what to think about" in the field of political science.}
+
+\textit{The statement "the media can't tell people what to think, but what to think about" aligns with the agenda-setting theory in the field of political science. This theory posits that the media may not dictate individuals' thoughts but can influence the salience of specific topics, thereby shaping public attention and priorities (Salman et al., 2016). The concept of salience, which refers to the prominence or importance of issues, is central to agenda-setting theory (Scheufele, 1999). The media's ability to select and emphasize certain issues over others contributes to the public's agenda and influences what people consider significant (Scheufele, 1999).}
+
+ \textit{Moreover, the theory of framing, closely related to agenda setting, also supports the idea that the media can influence public perception by shaping how issues are presented. Framing involves the media's ability to provide meaning to events and issues, thereby influencing public understanding and interpretation. The media's role in framing events and issues contributes to the public's understanding of the world around them and impacts the prioritization of various issues in public attention and thought.}
+
+ \textit{Additionally, the interplay between social media and agenda setting is noteworthy, as it has implications for political agenda setting. The rapid development of internet public opinion has increased its influence on society, affecting public perception and potentially shaping political agendas. Furthermore, the representation of political issues in electronic media plays a crucial role in agenda setting, as the media's decisions regarding what to emphasize can influence public concerns and priorities.}
+
+ \textit{In summary, the agenda-setting theory, framing, and the interplay between social media and political agenda setting all support the statement that "the media can't tell people what to think, but what to think about" in the field of political science. These theories underscore the media's influential role in shaping public attention and priorities, thereby impacting the political agenda.}
+
+ 
 
 
 
