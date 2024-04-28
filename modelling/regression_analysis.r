@@ -67,6 +67,8 @@ stargazer(
     m1, m2, m3, m4, m5, m6, m7,
     ## Change dependent variable name
     dep.var.labels = "MISI within election month",
+    column.sep.width = "10pt",
+    font.size = "large",
     ## Replace covariate names
     covariate.labels = c(
         "PISI",
@@ -93,5 +95,5 @@ stargazer(
     star.char = c("・", "*", "**", "***"),
     ## Add custom cutoffs to notes
     notes = "・p<0.7; *p<0.1; **p<0.05; ***p<0.01",
-    type="latex", out="output/tables/table_5.tex"
+    type = "latex", out = "output/tables/table_5.tex"
 )
