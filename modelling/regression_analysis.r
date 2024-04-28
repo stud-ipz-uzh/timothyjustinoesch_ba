@@ -61,3 +61,37 @@ stargazer(
     notes = "・p<0.7; *p<0.1; **p<0.05; ***p<0.01",
     type = "html", out = "output/tables/table_5.html"
 )
+
+stargazer(
+    ## Add models to stargazer
+    m1, m2, m3, m4, m5, m6, m7,
+    ## Change dependent variable name
+    dep.var.labels = "MISI within election month",
+    ## Replace covariate names
+    covariate.labels = c(
+        "PISI",
+        "Party Earnings",
+        "Number of Seats",
+        "Left-Right Scale",
+        "GAL-TAN Scale",
+        "MISI 3 months before ED",
+        "MISI 6 bonths before ED",
+        "PISI * Party Earnings"
+    ),
+    ## Group models
+    column.labels = c(
+        "PISI",
+        "+ Earnings",
+        "+ Controls",
+        "+ Interaction",
+        "+ MISI 3m",
+        "alt: MISI 6m",
+        "Full Model"
+    ),
+    ## Change stars to include p<0.5
+    star.cutoffs = c(0.7, 0.1, 0.05, 0.01),
+    star.char = c("・", "*", "**", "***"),
+    ## Add custom cutoffs to notes
+    notes = "・p<0.7; *p<0.1; **p<0.05; ***p<0.01",
+    type="latex", out="output/tables/table_5.tex"
+)
