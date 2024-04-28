@@ -1,0 +1,31 @@
+"","major_topic_pred","major_topic_pred_name","party","party_topic_salience_index","party_code"
+"1",9,"Immigration","SVP",0.133805154149063,1
+"2",19,"International Affairs","SVP",0.0947319322228501,1
+"3",2,"Civil Rights","SVP",0.0896369850111676,1
+"4",8,"Energy","SVP",0.078801252208857,1
+"5",13,"Social Welfare","SVP",0.0714010207834378,1
+"6",13,"Social Welfare","SP",0.231325142894685,2
+"7",19,"International Affairs","SP",0.155903028710334,2
+"8",2,"Civil Rights","SP",0.143157479797648,2
+"9",1,"Macroeconomics","SP",0.139806845805138,2
+"10",7,"Environment","SP",0.0697720254910978,2
+"11",1,"Macroeconomics","FDP",0.256540783710193,3
+"12",13,"Social Welfare","FDP",0.150349236415295,3
+"13",8,"Energy","FDP",0.140168107020244,3
+"14",3,"Health","FDP",0.106901858648041,3
+"15",18,"Foreign Trade","FDP",0.103587072333373,3
+"16",7,"Environment","Die Mitte",0.106778613371794,4
+"17",19,"International Affairs","Die Mitte",0.105387864427733,4
+"18",3,"Health","Die Mitte",0.100752034614196,4
+"19",15,"Domestic Commerce","Die Mitte",0.0880292572370454,4
+"20",8,"Energy","Die Mitte",0.0770062841248584,4
+"21",7,"Environment","GPS",0.166410278632405,5
+"22",2,"Civil Rights","GPS",0.100868830437232,5
+"23",19,"International Affairs","GPS",0.0959613467955107,5
+"24",17,"Technology","GPS",0.0683797720674264,5
+"25",8,"Energy","GPS",0.060016466611778,5
+"26",7,"Environment","glp",0.156501438279068,6
+"27",1,"Macroeconomics","glp",0.0968024346521032,6
+"28",3,"Health","glp",0.0795430858381623,6
+"29",10,"Transportation","glp",0.0778755159044482,6
+"30",2,"Civil Rights","glp",0.0754992287489057,6

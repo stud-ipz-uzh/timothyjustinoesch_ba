@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="httpgd" width="800.00" height="600.00" viewBox="0 0 800.00 600.00">
+<defs>
+  <style type='text/css'><![CDATA[
+    .httpgd line, .httpgd polyline, .httpgd polygon, .httpgd path, .httpgd rect, .httpgd circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+<clipPath id="c0"><rect x="0.00" y="0.00" width="800.00" height="600.00"/></clipPath>
+<clipPath id="c1"><rect x="33.27" y="23.34" width="570.38" height="544.93"/></clipPath>
+<clipPath id="c2"><rect x="0.00" y="0.00" width="800.00" height="600.00"/></clipPath>
+</defs>
+<rect width="100%" height="100%" style="stroke: none;fill: #FFFFFF;"/>
+<g clip-path="url(#c0)">
+</g><g clip-path="url(#c1)">
+<polyline points="33.27,508.93 603.65,508.93" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="33.27,393.73 603.65,393.73" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="33.27,278.52 603.65,278.52" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="33.27,163.31 603.65,163.31" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="33.27,48.11 603.65,48.11" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="144.70,568.27 144.70,23.34" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="284.85,568.27 284.85,23.34" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="424.99,568.27 424.99,23.34" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="565.13,568.27 565.13,23.34" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="33.27,566.54 603.65,566.54" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="33.27,451.33 603.65,451.33" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="33.27,336.12 603.65,336.12" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="33.27,220.92 603.65,220.92" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="33.27,105.71 603.65,105.71" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="74.63,568.27 74.63,23.34" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="214.77,568.27 214.77,23.34" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="354.92,568.27 354.92,23.34" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="495.06,568.27 495.06,23.34" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<circle cx="577.72" cy="370.69" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="277.07" cy="48.11" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="244.55" cy="359.16" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="219.24" cy="382.21" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="128.81" cy="232.44" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="59.19" cy="497.41" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="577.72" cy="485.89" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="277.07" cy="405.25" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="244.55" cy="508.93" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="219.24" cy="520.46" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="128.81" cy="428.29" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="59.19" cy="543.50" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<g><text x="579.43" y="370.07" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="17.06px" lengthAdjust="spacingAndGlyphs">SVP</text></g>
+<g><text x="278.21" y="47.49" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="11.38px" lengthAdjust="spacingAndGlyphs">SP</text></g>
+<g><text x="246.26" y="358.55" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="17.06px" lengthAdjust="spacingAndGlyphs">FDP</text></g>
+<g><text x="222.60" y="381.59" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="33.65px" lengthAdjust="spacingAndGlyphs">Die Mitte</text></g>
+<g><text x="131.18" y="231.82" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="23.72px" lengthAdjust="spacingAndGlyphs">Grüne</text></g>
+<g><text x="60.33" y="496.80" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="11.38px" lengthAdjust="spacingAndGlyphs">glp</text></g>
+</g><g clip-path="url(#c2)">
+<g><text x="28.34" y="569.69" text-anchor="end" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="4.90px" lengthAdjust="spacingAndGlyphs">0</text></g>
+<g><text x="28.34" y="454.48" text-anchor="end" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="9.79px" lengthAdjust="spacingAndGlyphs">10</text></g>
+<g><text x="28.34" y="339.28" text-anchor="end" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="9.79px" lengthAdjust="spacingAndGlyphs">20</text></g>
+<g><text x="28.34" y="224.07" text-anchor="end" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="9.79px" lengthAdjust="spacingAndGlyphs">30</text></g>
+<g><text x="28.34" y="108.86" text-anchor="end" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="9.79px" lengthAdjust="spacingAndGlyphs">40</text></g>
+<g><text x="74.63" y="579.50" text-anchor="middle" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="34.27px" lengthAdjust="spacingAndGlyphs">1000000</text></g>
+<g><text x="214.77" y="579.50" text-anchor="middle" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="34.27px" lengthAdjust="spacingAndGlyphs">2000000</text></g>
+<g><text x="354.92" y="579.50" text-anchor="middle" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="34.27px" lengthAdjust="spacingAndGlyphs">3000000</text></g>
+<g><text x="495.06" y="579.50" text-anchor="middle" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="34.27px" lengthAdjust="spacingAndGlyphs">4000000</text></g>
+<g><text x="318.46" y="592.09" text-anchor="middle" style="font-family: Arial;font-size: 11.00px;" textLength="77.06px" lengthAdjust="spacingAndGlyphs">Campaignfunds</text></g>
+<g><text transform="translate(13.37,295.80) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 11.00px;" textLength="72.76px" lengthAdjust="spacingAndGlyphs">Press releases</text></g>
+<g><text x="620.09" y="279.73" style="font-family: Arial;font-size: 11.00px;" textLength="36.72px" lengthAdjust="spacingAndGlyphs">Legend</text></g>
+<circle cx="628.73" cy="295.06" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="628.73" cy="295.06" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<g><text x="628.73" y="298.12" text-anchor="middle" style="font-family: Arial;font-size: 8.54px;fill: #0000FF;" textLength="4.74px" lengthAdjust="spacingAndGlyphs">a</text></g>
+<circle cx="628.73" cy="312.34" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="628.73" cy="312.34" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<g><text x="628.73" y="315.40" text-anchor="middle" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="4.74px" lengthAdjust="spacingAndGlyphs">a</text></g>
+<g><text x="642.85" y="298.22" style="font-family: Arial;font-size: 8.80px;" textLength="141.80px" lengthAdjust="spacingAndGlyphs">Press releases within 1 month of ED</text></g>
+<g><text x="642.85" y="315.50" style="font-family: Arial;font-size: 8.80px;" textLength="146.20px" lengthAdjust="spacingAndGlyphs">Press releases within 3 months of ED</text></g>
+<g><text x="33.27" y="14.94" style="font-family: Arial;font-size: 13.20px;" textLength="144.42px" lengthAdjust="spacingAndGlyphs">Funds vs Press releases</text></g>
+</g>
+</svg>

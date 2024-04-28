@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="httpgd" width="800.00" height="600.00" viewBox="0 0 800.00 600.00">
+<defs>
+  <style type='text/css'><![CDATA[
+    .httpgd line, .httpgd polyline, .httpgd polygon, .httpgd path, .httpgd rect, .httpgd circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+<clipPath id="c0"><rect x="0.00" y="0.00" width="800.00" height="600.00"/></clipPath>
+<clipPath id="c1"><rect x="43.06" y="23.34" width="568.90" height="544.93"/></clipPath>
+<clipPath id="c2"><rect x="0.00" y="0.00" width="800.00" height="600.00"/></clipPath>
+</defs>
+<rect width="100%" height="100%" style="stroke: none;fill: #FFFFFF;"/>
+<g clip-path="url(#c0)">
+</g><g clip-path="url(#c1)">
+<polyline points="43.06,545.11 611.96,545.11" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="43.06,410.93 611.96,410.93" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="43.06,276.75 611.96,276.75" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="43.06,142.57 611.96,142.57" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="154.20,568.27 154.20,23.34" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="293.99,568.27 293.99,23.34" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="433.77,568.27 433.77,23.34" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="573.55,568.27 573.55,23.34" style="stroke-width: 0.53;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="43.06,478.02 611.96,478.02" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="43.06,343.84 611.96,343.84" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="43.06,209.66 611.96,209.66" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="43.06,75.48 611.96,75.48" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="84.31,568.27 84.31,23.34" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="224.10,568.27 224.10,23.34" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="363.88,568.27 363.88,23.34" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<polyline points="503.66,568.27 503.66,23.34" style="stroke-width: 1.07;stroke: #EBEBEB;stroke-linecap: butt;"/>
+<circle cx="586.10" cy="48.11" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="286.23" cy="107.41" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="253.80" cy="133.44" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="138.36" cy="423.27" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="68.92" cy="392.68" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="586.10" cy="409.59" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="286.23" cy="437.49" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="253.80" cy="438.03" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="138.36" cy="535.71" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="68.92" cy="543.50" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<g><text x="587.81" y="47.49" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="17.06px" lengthAdjust="spacingAndGlyphs">SVP</text></g>
+<g><text x="287.37" y="106.80" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="11.38px" lengthAdjust="spacingAndGlyphs">SP</text></g>
+<g><text x="255.51" y="132.83" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="17.06px" lengthAdjust="spacingAndGlyphs">FDP</text></g>
+<g><text x="140.73" y="422.66" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="23.72px" lengthAdjust="spacingAndGlyphs">Grüne</text></g>
+<g><text x="70.06" y="392.07" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="11.38px" lengthAdjust="spacingAndGlyphs">glp</text></g>
+</g><g clip-path="url(#c2)">
+<g><text x="38.13" y="481.17" text-anchor="end" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="14.69px" lengthAdjust="spacingAndGlyphs">500</text></g>
+<g><text x="38.13" y="346.99" text-anchor="end" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="19.58px" lengthAdjust="spacingAndGlyphs">1000</text></g>
+<g><text x="38.13" y="212.81" text-anchor="end" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="19.58px" lengthAdjust="spacingAndGlyphs">1500</text></g>
+<g><text x="38.13" y="78.63" text-anchor="end" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="19.58px" lengthAdjust="spacingAndGlyphs">2000</text></g>
+<g><text x="84.31" y="579.50" text-anchor="middle" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="34.27px" lengthAdjust="spacingAndGlyphs">1000000</text></g>
+<g><text x="224.10" y="579.50" text-anchor="middle" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="34.27px" lengthAdjust="spacingAndGlyphs">2000000</text></g>
+<g><text x="363.88" y="579.50" text-anchor="middle" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="34.27px" lengthAdjust="spacingAndGlyphs">3000000</text></g>
+<g><text x="503.66" y="579.50" text-anchor="middle" style="font-family: Arial;font-size: 8.80px;fill: #4D4D4D;" textLength="34.27px" lengthAdjust="spacingAndGlyphs">4000000</text></g>
+<g><text x="327.51" y="592.09" text-anchor="middle" style="font-family: Arial;font-size: 11.00px;" textLength="77.06px" lengthAdjust="spacingAndGlyphs">Campaignfunds</text></g>
+<g><text transform="translate(13.37,295.80) rotate(-90.00)" text-anchor="middle" style="font-family: Arial;font-size: 11.00px;" textLength="107.00px" lengthAdjust="spacingAndGlyphs">Occurrences in media</text></g>
+<circle cx="637.04" cy="295.06" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<circle cx="637.04" cy="295.06" r="1.95" style="stroke-width: 0.71;stroke: #0000FF;fill: #0000FF;"/>
+<g><text x="637.04" y="298.12" text-anchor="middle" style="font-family: Arial;font-size: 8.54px;fill: #0000FF;" textLength="4.74px" lengthAdjust="spacingAndGlyphs">a</text></g>
+<circle cx="637.04" cy="312.34" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<circle cx="637.04" cy="312.34" r="1.95" style="stroke-width: 0.71;stroke: #FF0000;fill: #FF0000;"/>
+<g><text x="637.04" y="315.40" text-anchor="middle" style="font-family: Arial;font-size: 8.54px;fill: #FF0000;" textLength="4.74px" lengthAdjust="spacingAndGlyphs">a</text></g>
+<g><text x="651.16" y="298.22" style="font-family: Arial;font-size: 8.80px;" textLength="133.48px" lengthAdjust="spacingAndGlyphs">Occurrences within 1 month of ED</text></g>
+<g><text x="651.16" y="315.50" style="font-family: Arial;font-size: 8.80px;" textLength="137.88px" lengthAdjust="spacingAndGlyphs">Occurrences within 3 months of ED</text></g>
+<g><text x="43.06" y="14.94" style="font-family: Arial;font-size: 13.20px;" textLength="185.48px" lengthAdjust="spacingAndGlyphs">Funds vs Occurrences in media</text></g>
+</g>
+</svg>
