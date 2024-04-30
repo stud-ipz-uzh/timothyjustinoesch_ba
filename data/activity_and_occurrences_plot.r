@@ -126,7 +126,7 @@ ggplot(activity_and_occurrences, aes(x = log(earnings_national), y = pr_6m, colo
     geom_point(aes(y = pr_3m, color = "#595959")) +
     geom_line(aes(y = pr_3m, color = "#595959")) +
     labs(
-        x = "Log ofEarnings of national parties",
+        x = "Log of Earnings of national parties",
         y = "Press releases",
         title = "Earnings vs Press releases",
         color = ""
