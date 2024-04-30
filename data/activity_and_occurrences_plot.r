@@ -29,7 +29,7 @@ ggplot(activity_without_mitte, aes(x = reorder(party, -occurr_6m), y = occurr_6m
     ) -> plot_occurr_6m
 
 # Scatter plot where x is earnings_national and y is occurr_1m with #000000, occurr_3m with #A6A6A6
-ggplot(activity_without_mitte, aes(x = earnings_national, y = occurr_6m, color = "#A6A6A6")) +
+ggplot(activity_without_mitte, aes(x = log(earnings_national), y = occurr_6m, color = "#A6A6A6")) +
     geom_point() +
     geom_smooth() +
     geom_point(aes(y = occurr_1m, color = "#000000")) +
@@ -37,7 +37,7 @@ ggplot(activity_without_mitte, aes(x = earnings_national, y = occurr_6m, color =
     geom_point(aes(y = occurr_3m, color = "#595959")) +
     geom_smooth(aes(y = occurr_3m, color = "#595959")) +
     labs(
-        x = "Earnings of national parties",
+        x = "Log of Earnings of national parties",
         y = "Occurrences in media",
         title = "Earnings vs Occurrences in media",
         color = ""
@@ -92,7 +92,7 @@ ggplot(activity_and_occurrences, aes(x = reorder(party, -pr_6m), y = pr_6m)) +
     ) -> plot_pr_6m
 
 # Scatter plot where x is earnings_national and y is insta_1m with #000000, insta_3m with #A6A6A6
-ggplot(activity_and_occurrences, aes(x = earnings_national, y = insta_6m, color = "#A6A6A6")) +
+ggplot(activity_and_occurrences, aes(x = log(earnings_national), y = insta_6m, color = "#A6A6A6")) +
     geom_point() +
     geom_line() +
     geom_point(aes(y = insta_1m, color = "#000000")) +
@@ -100,7 +100,7 @@ ggplot(activity_and_occurrences, aes(x = earnings_national, y = insta_6m, color 
     geom_point(aes(y = insta_3m, color = "#595959")) +
     geom_line(aes(y = insta_3m, color = "#595959")) +
     labs(
-        x = "Earnings of national parties",
+        x = "Log of Earnings of national parties",
         y = "Instagram posts",
         title = "Earnings vs Instagram posts",
         color = ""
@@ -118,7 +118,7 @@ ggplot(activity_and_occurrences, aes(x = earnings_national, y = insta_6m, color 
     ) -> plot_insta_v_earnings
 
 # Scatter plot where x is earnings_national and y is pr_1m with #000000, pr_3m with #A6A6A6
-ggplot(activity_and_occurrences, aes(x = earnings_national, y = pr_6m, color = "#A6A6A6")) +
+ggplot(activity_and_occurrences, aes(x = log(earnings_national), y = pr_6m, color = "#A6A6A6")) +
     geom_point() +
     geom_line() +
     geom_point(aes(y = pr_1m, color = "#000000")) +
@@ -126,7 +126,7 @@ ggplot(activity_and_occurrences, aes(x = earnings_national, y = pr_6m, color = "
     geom_point(aes(y = pr_3m, color = "#595959")) +
     geom_line(aes(y = pr_3m, color = "#595959")) +
     labs(
-        x = "Earnings of national parties",
+        x = "Log ofEarnings of national parties",
         y = "Press releases",
         title = "Earnings vs Press releases",
         color = ""
