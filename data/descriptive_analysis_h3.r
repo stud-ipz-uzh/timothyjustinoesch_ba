@@ -75,4 +75,5 @@ df_party_salience_index_top5 %>%
     distinct() %>%
     nrow()
 
+
 write.csv(as.data.frame(df_party_salience_index_top5), "output/party_salience_index_top5.csv")
